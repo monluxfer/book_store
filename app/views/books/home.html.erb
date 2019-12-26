@@ -1,3 +1,35 @@
-<h1>Books#home</h1>
-<p>Find me in app/views/books/home.html.erb</p>
-<h1>Hello there!</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' %>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="<%= home_path %>">Bookman</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="<%= home_path %>">Товары</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<%= bag_path %>">Корзина</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<%= help_path %>">Контакты</a>
+          </li>
+          <li>
+            <a class="btn btn-outline-primary" href="<%= reg_path %>">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  </body>
+</html>
