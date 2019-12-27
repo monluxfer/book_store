@@ -54,7 +54,6 @@ ActiveRecord::Schema.define(version: 2019_12_26_222925) do
 
   create_table "customers", force: :cascade do |t|
     t.string "name"
-    t.string "surname"
     t.string "phone"
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
